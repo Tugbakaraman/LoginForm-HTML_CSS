@@ -1,0 +1,71 @@
+.wrapper {
+  width: 380px;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 1px gray;
+}
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  background: linear-gradient(135deg, #fb0000, #3b00fb);
+  border-radius: 15px 15px 0 0;
+}
+form {
+  padding: 10px 30px 50px 30px;
+}
+form .field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+form .field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  font-size: 15px;
+}
+form .field label {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  font-size: 17px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label {
+  top: 0%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #3b00fb;
+  font-size: 15px;
+}
+form .pass-link {
+  margin-top: 0.5rem;
+}
+form .signup-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+form .pass-link a,
+form .signup-link a {
+  text-decoration: none;
+  color: #3b00fb;
+}
+form .pass-link a:hover,
+form .signup-link a:hover {
+  text-decoration: underline;
+}
+form input[type="submit"] {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, #fb0000, #3b00fb);
+}
